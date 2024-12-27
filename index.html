@@ -14,19 +14,38 @@
 </head>
 
 <body>
+    <div class="bg-gradient"></div>
     <div class="mask-circle"></div>
     <div class="mask-circle mask-circle--bottom"></div>
     <header class="section section-header section--cont-center section--borer-bottom">
-        <h1 class="text-fest">Changelog MD </h1>
+        <h1 class="text-fest">Changelog <span class="text-fest--border">MD</span> </h1>
     </header>
     <section class="section section--ligth section--container">
         <!-- <button class="button"> copiar </button> -->
-        <zero-md src="changelog.md">
-            <template>
-                <!-- KaTeX styles (needed for math) -->
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css" />
-            </template>
-        </zero-md>
+        <div class="md-content">
+            <zero-md src="changelog.md">
+                <template>
+                    <!-- KaTeX styles (needed for math) -->
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css" />
+                </template>
+                <template data-append>
+                    <style>
+                      h1 {
+                        background             : linear-gradient(to right, var(--color-secondary, rgb(114, 250, 209)), var(--color-tertiary, rgb(0, 87, 39)), var(--color-primary, rgb(228, 249, 2)));
+                        background-clip        : text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                      }
+                      p {
+                        color: var(--color-text, #ccc);
+                        line-height: 1.2;
+                        text-wrap-style: pretty;
+                        margin-block: .6em;
+                      }
+                    </style>
+                  </template>
+            </zero-md>
+        </div>
     </section>
     <span class="liked"> Con cariño desde un rincón de
         <svg version="1.1" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 42" xml:space="preserve"> <style type="text/css"> .st0 { fill: #FFFFFF; } .st1 { fill: #D42E12; } .st2 { fill: #0034A8; } </style> <path id="Rounded_Rectangle_7_copy" class="st0" d="M5.8,0h52.3C61.4,0,64,2.6,64,5.7v30.6c0,3.2-2.6,5.7-5.8,5.7H5.8 C2.6,42,0,39.4,0,36.3V5.7C0,2.6,2.6,0,5.8,0z" /> <path class="st1" d="M0,36.3C0,39.4,2.6,42,5.8,42h52.4c3.2,0,5.8-2.5,5.8-5.7V21H0V36.3z" /> <path class="st2" d="M21,0H5.8C2.6,0,0,2.6,0,5.7V21h21V0z" /> <polygon class="st0" points="10.8,4.9 12.3,9.8 17.4,9.8 13.3,12.7 14.9,17.6 10.8,14.6 6.6,17.6 8.2,12.7 4.1,9.8 9.2,9.8 " /> </svg>

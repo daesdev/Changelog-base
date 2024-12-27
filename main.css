@@ -1,6 +1,13 @@
+:root {
+    --color-primary: rgb(228, 249, 2);
+    --color-secondary: rgb(114, 250, 209);
+    --color-tertiary: rgb(0, 87, 39);
+    --bg-color: #0c0c0c;
+    --text-color: #fff;
+}
 /* style site */
 body {
-    background : #0c0c0c;
+    background : var(--bg-color, #0c0c0c);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -12,7 +19,7 @@ body {
 }
 
 .section-header {
-    background: #0c0c0c;
+    /* background: #0c0c0c; */
 }
 
 .section--cont-center {
@@ -31,19 +38,17 @@ body {
     width        : 100%;
     max-width    : 920px;
     margin-inline: auto;
-    border       : .5px solid hwb(0 80% 20% / 0.373);
-    border-radius: 20px;
 }
 
 .section--ligth {
     background     : transparent;
-    color          : #fff;
+    color          : var(--text-color, #fff);
     backdrop-filter: blur(10px);
 }
 
 .text-fest {
     font-size              : 72px;
-    background             : linear-gradient(to right, rgb(228, 249, 2), rgb(114, 250, 209), rgb(0, 87, 39));
+    background             : linear-gradient(to right, var(--color-primary, rgb(228, 249, 2)), var(--color-secondary, rgb(114, 250, 209), var(--color-tertiary, rgb(0, 87, 39))));
     background-clip        : text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,7 +58,7 @@ body {
 .mask-circle {
     position     : absolute;
     z-index      : 1;
-    background   : radial-gradient(circle at 100%, rgb(228, 249, 2), rgb(114, 250, 209), rgb(0, 87, 39));
+    background   : radial-gradient(circle at 100%, var(--color-primary, rgb(228, 249, 2)), var(--color-secondary, rgb(114, 250, 209), var(--color-tertiary, rgb(0, 87, 39))));
     height       : 300px;
     width        : 300px;
     transform    : translate(0, -50%);
@@ -61,6 +66,7 @@ body {
     right        : 40px;
     border-radius: 50%;
     opacity      : .7;
+    filter       : blur(80px);
 }
 
 .mask-circle--bottom {
@@ -93,8 +99,8 @@ body {
 }
 
 .button:hover {
-    border-color: rgb(114, 250, 209);
-    background  : rgb(0, 87, 39);
+    border-color: var(--color-secondary, rgb(114, 250, 209));
+    background  : var(--color-tertiary, rgb(0, 87, 39));
     cursor      : pointer;
 }
 
@@ -108,4 +114,28 @@ body {
 
 .liked svg {
     margin-inline: 4px;
+}
+
+.bg-gradient {
+    width     : 100%;
+    width     : 100vw;
+    height    : 100%;
+    height    : 100vh;
+    height    : 100dvh;
+    opacity  : .5;
+    position : fixed;
+    border-radius: 20px;
+    top      : 0;
+    left     : 0;
+    z-index  : 10;
+    filter   : blur(200px);
+    background: linear-gradient(45deg, #434432, #17342c, #001f0e);
+}
+
+.md-content {
+    border       : .5px solid hwb(0 80% 20% / 0.373);
+    border-radius: 20px;
+    margin-inline: 20px;
+    padding      : 28px;
+    min-height       : 800px;
 }
