@@ -4,3 +4,8 @@ De este modo tendrás claridad de lo que resuelve, introduce y entregas cada ver
 
 
 Con cariño desde un rincon de 🇨🇱 para el 🌎
+
+## Tecnologías
+- [Zero-md](https://github.com/zerodevx/zero-md) - Renderizar markdown en HTML - [🚀 Documentación](zerodevx.github.io/zero-md/)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Hojas de estilo en cascada - [🚀 Documentación](https://developer.mozilla.org/es/docs/Web/CSS)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Lenguaje de marcado de hipertexto - [🚀 Documentación](https://developer.mozilla.org/es/docs/Web/HTML)
