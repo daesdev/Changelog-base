@@ -5,6 +5,9 @@ De este modo tendrás claridad de lo que resuelve, introduce y entregas cada ver
 
 Con cariño desde un rincon de 🇨🇱 para el 🌎
 
+<p align="center">
+  <img src="./preview.jpg" alt="Preview changelog" width="600"/>
+</p>
 ## Tecnologías
 - [Zero-md](https://github.com/zerodevx/zero-md) - Renderizar markdown en HTML - [🚀 Documentación](zerodevx.github.io/zero-md/)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Hojas de estilo en cascada - [🚀 Documentación](https://developer.mozilla.org/es/docs/Web/CSS)
