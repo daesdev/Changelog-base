@@ -25,4 +25,4 @@ El formato de este archivo está basado en [Keep a Changelog](https://keepachang
 - N/A
 
 ## Licencia
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+Aquí debes agregar comentarios sobre la licencia para más detalles.

@@ -1,9 +1,10 @@
 :root {
     --color-primary       : rgb(228, 249, 2);
     --color-secondary     : rgb(114, 250, 209);
-    --color-tertiary      : rgb(0, 87, 39);
+    --color-tertiary      : rgb(78, 183, 224);
     --bg-color            : #0c0c0c;
     --bg-color-65         : #7b757565;
+    --bg-color-white-65   : #ffffff65;
     --text-color          : #fff;
     --github-color-default: #f0f6fc;
 }
@@ -23,7 +24,7 @@ body {
 
 .section-header {
     min-height: 300px;
-    height     : calc(100dvh / 1.55);
+    height    : calc(100dvh / 1.55);
 }
 
 .section--cont-center {
@@ -56,8 +57,13 @@ body {
     align-items    : center;
     gap            : 4px;
     padding        : 2px 5px 2px 5px;
-    background     : var(--bg-color-65, #0c0c0c);
+    background     : var(--bg-color-white-65, #0c0c0c);
     backdrop-filter: blur(10px);
+}
+
+.section__nav-a {
+    --github-color-default: #1d1d1b;
+    color                 : var(--text-default);
 }
 
 .section__nav--fixed-center {
@@ -133,8 +139,9 @@ body {
     display        : flex;
     justify-content: center;
     width          : 100%;
-    font-size      : 13px;
+    font-size      : 14px;
     padding        : 16px 20px 30px;
+    color          : var(--text-color, #ffffffde);
 }
 
 .liked svg {
@@ -158,11 +165,14 @@ body {
 }
 
 .md-content {
-    border       : 2px solid #588b5d6f;
-    border-radius: 20px;
-    margin-inline: 20px;
-    padding      : 28px;
-    min-height   : 800px;
+    border         : 2px solid #588b5d6f;
+    border-radius  : 20px;
+    margin-inline  : auto;
+    padding        : 18px;
+    min-height     : 800px;
+    width          : 100%;
+    background     : var(--bg-color-65, #0c0c0c);
+    backdrop-filter: blur(20px);
 }
 
 .text-default {
